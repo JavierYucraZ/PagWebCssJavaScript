@@ -1,0 +1,229 @@
+:root{
+	--color1 : rgb(219,144,0.5);
+	--color2 : rgba(23,188,83,0.8);
+	--color3 : rgba(11,194,211,0.6);
+	--fondo : #f2f2f2;
+	--navBar: rgb(24,150,255);
+	--titulos : 30px;
+	--subtitulos : 20px;
+	--margenes : 50px;
+	--espacios : 10px;
+	--espacios-contenidos : 45px;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: Trebuchet MS;
+	background: var(--fondo);
+}
+
+img{
+	vertical-align: top;
+}
+
+header{
+	width: 100%;
+	height: 90vh;
+	background: linear-gradient(to bottom, 
+		rgba(211,135,20,0.6),
+		rgba(29,241,105,0.4),
+		rgba(7,109,105,0.45)), 
+	url(../imagenes/fondo.jpg) fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+#nav{
+	width: 100%;
+	margin: auto;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,1);
+}
+
+.contenedor-nav{
+	height: 10vh;
+	transition: all 1s;
+	background: var(--navBar);
+	padding: 20px 0;
+}
+
+.contenedor-nav .enlaces{
+	float: right;
+	margin-right: 70px;
+}
+
+/*Estilo Menu Pegajoso*/
+
+.fijarMenu{
+	position: fixed;
+	top: 0 ;
+	left: 0 ;
+	z-index: 3;
+	width: 100%;
+}
+
+.nav1{
+	background: transparent;
+	height: 80px;
+	color: white;
+}
+
+.nav2{
+	background: var(--fondo);
+	height: 100px;
+	color: black;
+}
+
+/* Estilos dinamicos */
+
+nav .enlaces a{
+	display: inline-block;
+	text-decoration: none;
+	margin-left: 17px;
+	padding: 5px 0;
+	font-size: 17px;
+	font-weight: bold;
+	text-align: center;
+	border-bottom: 3px solid transparent;
+	color: white;
+	transition: 0.2s;
+}
+
+nav .enlaces a:hover{
+	border-bottom: 1px solid #11560C;
+	transition: 0.2s;
+}
+
+.icono{
+	display: none;
+	font-size: 24px;
+	padding: 24px 5px 20px;
+}
+
+.textos{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.textos h1{
+	font-size: 50px;
+}
+
+.textos h2{
+	font-size: 30px;
+	font-weight: 300;
+}
+
+/* Main */
+.contenedor{
+	margin: auto;
+	padding: var(--margenes) 0;
+	width: 90%;
+	max-width: 1000px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.contenedor h3{
+	font-size: var(--titulos);
+	color: var(--color1);
+	margin-bottom: var(--espacios);
+}
+
+.contenedor p{
+	font-size: var(--subtitulos);
+	font-weight: 300;
+	color: var(--color1);
+}
+
+.despues:after{
+	content: '';
+	display: block;
+	margin: auto;
+	margin-top: var(--espacios);
+	width: 100px;
+	height: 2px;
+	background: var(--color1);
+	margin-bottom: var(--espacios-contenidos);
+}
+
+.tarjeta{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.contenido-tarjeta{
+	width: 31%;
+	box-shadow: 0 0 6px 0 rgba(0,0,0,0.5);
+	overflow: hidden;
+	height: 400px;
+}
+
+.contenido-tarjeta img{
+	width: 100%;
+	height: 100%;
+	object-fit : cover;
+}
+
+.personal{
+	height: 80%;
+}
+
+.texto-equipo{
+	height: 20%;
+	width: 100%;
+	padding: var(--espacios) 0;
+}
+
+.contenedor-servicios{
+	background: url(../imagenes/teclado.jpg);
+	background-size: cover;
+	height: auto;
+	color: white;
+}
+
+.servicios{
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	flex-wrap: wrap;
+}
+
+.caja-servicios{
+	margin-bottom: var(--espacios);
+}
+
+.caja-servicios p{
+	text-align: center;
+}
+
+.botones-trabajos{
+	overflow: hidden;
+}
+
+.botones-trabajos li{
+	display: inline-block;
+	text-align: center;
+	margin-left: var(--espacios);
+	margin-bottom: var(--espacios-contenidos);
+	padding: 6px 12px;
+	border : 1px solid var(--color1);
+	list-style: none;
+	color: var(--color1);
+}
+
+.botones-trabajos li:hover{
+	background: var(--color1);
+	color: white;
+	cursor: pointer;
+}
