@@ -227,3 +227,67 @@ nav .enlaces a:hover{
 	color: white;
 	cursor: pointer;
 }
+
+.botones-trabajos .activo{
+	background: var(--color1);
+	color: white;
+}
+
+.galeria-trabajos{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.galeria-trabajos .cont-trabajos{
+	width: 31%;
+	box-shadow: 0 0 6px 0 rgba(0,0,0,0.5);
+	height: 300px;
+	overflow: hidden;
+	margin-bottom: var(--espacios-contenidos);
+}
+
+.img-trabajos{
+	height: 90%;
+	width: 100%;
+}
+
+.img-trabajos img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.textos-trabajos{
+	height: 10%;
+}
+
+.textos-trabajos h4{
+	line-height: 30px;
+	font-weight: 300;
+}
+
+footer{
+	background: url(../imagenes/teclado.jpg);
+	color: var(--color1);
+}
+
+.iconos{
+	display: flex;
+	margin: auto;
+	justify-content: space-around;
+}
+
+.fab{
+	font-size: 60px;
+	color: white;
+	display: inline-block;
+	transition: 1s;
+	cursor: pointer;
+}
+
+.fab:hover{
+	color: var(--color3);
+	transition: 1s;
+}
+
